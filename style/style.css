@@ -6,6 +6,11 @@
 }
 
 /* Cuerpo */
+html, body {
+     max-width: 100%;
+     overflow-x: hidden;
+}
+
 body{
      text-align: center;
      font-family: 'Poppins',sans-serif;
