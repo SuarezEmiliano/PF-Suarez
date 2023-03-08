@@ -1,0 +1,43 @@
+header {
+	background-color: black;
+	border-bottom: solid white 1px;
+	padding: 10px;
+	grid-area: encabezado;
+}
+
+.colorHeader {
+	background-color: black;
+}
+
+nav {
+	font-family: $font-family_2;
+	font-size: 20px;
+	display: flex;
+	justify-content: space-between;
+	flex-direction: row-reverse;
+	margin-right: 8px;
+}
+
+.sacarPadding {
+	padding: 0px;
+}
+
+.logogym {
+	height: 80px;
+	width: 80px;
+	border: solid black;
+	border-radius: 20px;
+}
+
+.enlaceHeader {
+	color: white;
+	&:hover {
+		color: $color_titulo2;
+	}
+}
+
+.menuResponsive {
+	background-color: $color_titulo2;
+	padding: 20px;
+	border-radius: 5px;
+}

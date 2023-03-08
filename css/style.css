@@ -1,0 +1,485 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@1,300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Tilt+Prism&display=swap");
+header {
+  background-color: black;
+  border-bottom: solid white 1px;
+  padding: 10px;
+  grid-area: encabezado;
+}
+
+.colorHeader {
+  background-color: black;
+}
+
+nav {
+  font-family: "Roboto:wght@300", sans-serif;
+  font-size: 20px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+  margin-right: 8px;
+}
+
+.sacarPadding {
+  padding: 0px;
+}
+
+.logogym {
+  height: 80px;
+  width: 80px;
+  border: solid black;
+  border-radius: 20px;
+}
+
+.enlaceHeader {
+  color: white;
+}
+.enlaceHeader:hover {
+  color: rgb(245, 4, 4);
+}
+
+.menuResponsive {
+  background-color: rgb(245, 4, 4);
+  padding: 20px;
+  border-radius: 5px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-weight: bolder;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-image: url(../img/fondo.jpg);
+}
+
+/* GRID */
+.gridContainer {
+  display: grid;
+  grid-template-areas: "encabezado" "navbar" "contenido" "piedepagina";
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+}
+
+nav {
+  grid-area: navbar;
+}
+
+.contenido {
+  grid-area: contenido;
+}
+
+/* Inicio */
+@media screen and (min-width: 350px) {
+  .fondoInicio {
+    background-image: url(../img/fondo-ladrillos-negros.jfif);
+  }
+  .t-stroke {
+    margin-top: 20px;
+    font-size: 60px;
+    color: transparent;
+    -moz-text-stroke-width: 2px;
+    -webkit-text-stroke-width: 2px;
+    -moz-text-stroke-color: black;
+    -webkit-text-stroke-color: white;
+  }
+  .t-shadow {
+    text-shadow: 7px 7px rgb(168, 9, 9);
+  }
+  .thumbnail {
+    position: relative;
+  }
+  .subtitulos {
+    font-family: "Roboto:wght@300", sans-serif;
+    text-align: center;
+    font-size: 18px;
+    color: rgb(168, 9, 9);
+    text-shadow: 0px 0px 9px rgb(245, 4, 4);
+    margin: 10px 0px 10px 0px;
+  }
+  .subtituloInicio {
+    color: rgb(245, 4, 4);
+    text-shadow: 0px 0px 9px rgb(168, 9, 9);
+    margin: 5px 0px 0px 0px;
+    font-size: 18px;
+  }
+  .imgCarrusel {
+    width: 30px;
+    height: 300px;
+  }
+  .imgInicio {
+    margin: 10px 0px 0px 0px;
+    width: 310px;
+    height: 310px;
+    border: solid black 3px;
+  }
+  .textoInicio {
+    padding: 20px;
+    margin: 0px 10px 0px 10px;
+    text-align: center;
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 16px;
+    color: white;
+  }
+  .tituloImagen {
+    font-family: "Tilt Prism", cursive;
+    color: black;
+    margin: 5px 0px 0px 0px;
+    text-shadow: 0 0 0.2em red;
+    text-align: center;
+    font-size: 40px;
+  }
+  .imagen1Flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 40px 20px 40px 20px;
+    background: black;
+    background: -webkit-linear-gradient(to right, #e74c3c, black);
+    background: linear-gradient(to right, #e74c3c, black);
+  }
+  .imagen2Flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 40px 20px 40px 20px;
+    background: black;
+    background: -webkit-linear-gradient(to right, #e74c3c, black);
+    background: linear-gradient(to right, #e74c3c, black);
+  }
+  .hacerGris {
+    filter: grayscale(80%);
+  }
+  .hacerGris:hover {
+    filter: grayscale(0%);
+    transition: 2s;
+  }
+  /* Instalaciones */
+  .imgInstalaciones {
+    height: 300px;
+    width: 300px;
+    margin: 20px 0px 20px 0px;
+    border: 5px inset black;
+  }
+  .nombreSeccion {
+    font-family: "Roboto:wght@300", sans-serif;
+    font-size: 25px;
+    background-color: rgb(168, 9, 9);
+    padding: 5px;
+    margin: 30px 100px 30px 0px;
+    text-align: center;
+    -moz-text-stroke-width: 2px;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
+  }
+  .seccion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0px 20px 0px;
+  }
+  /* Productos */
+  .imgProductos {
+    height: 300px;
+    width: 300px;
+    margin: 20px 20px 20px 20px;
+    border: 5px inset black;
+  }
+  .precioProductos {
+    font-family: "Roboto:wght@300", sans-serif;
+    text-align: center;
+    color: white;
+    display: block;
+    margin: 0px 100px 0px 100px;
+    font-size: 35px;
+    border-radius: 20px;
+    background-image: url(../img/fondo-form.jpg);
+  }
+  /* Ubicación */
+  .acomodarMapa {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 500px;
+  }
+  .mapa {
+    width: 80%;
+    height: 70%;
+  }
+  .mapa iframe {
+    height: 100%;
+    width: 100%;
+  }
+  .fachadaFlex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .imagenFachada {
+    width: 300px;
+    height: 300px;
+    margin: 20px 0px 20px 0px;
+    border: 5px inset rgb(245, 4, 4);
+  }
+  .imagenFachada:hover {
+    transform: scale(1.2);
+    transition-property: all;
+    transition-duration: 2s;
+  }
+  /* Contactos */
+  .acomodar {
+    display: flex;
+    justify-content: center;
+  }
+  .formulario {
+    font-family: "Roboto:wght@300", sans-serif;
+    text-align: left;
+    font-size: 14px;
+    color: white;
+    width: 350px;
+    height: 450px;
+    border: 5px inset rgb(245, 4, 4);
+    padding: 5px;
+    background-image: url(../img/fondo-form.jpg);
+    opacity: 0.9;
+  }
+  fieldset {
+    border: 0px;
+  }
+  fieldset div {
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .botones {
+    text-align: right;
+    margin-right: 10px;
+  }
+  .fondoBoton:hover {
+    background-color: rgb(168, 9, 9);
+  }
+  .horario {
+    margin-top: 30px;
+    color: white;
+    font-size: 20px;
+    padding: 10px;
+    margin: 30px 30px 0px 30px;
+    border-radius: 20px;
+    background: black;
+    background: -webkit-linear-gradient(to right, rgb(245, 4, 4), black);
+    background: linear-gradient(to right, rgb(245, 4, 4), black);
+  }
+  .enlaceUbicacion {
+    color: rgb(245, 4, 4);
+    text-decoration: none;
+  }
+}
+@media screen and (min-width: 768px) {
+  .gridContainer {
+    display: grid;
+    grid-template-areas: "encabezado encabezado encabezado" "navbar navbar navbar" "contenido contenido contenido" "piedepagina piedepagina piedepagina";
+  }
+  /* Inicio */
+  .subtitulos {
+    font-size: 25px;
+  }
+  .t-stroke {
+    font-size: 80px;
+  }
+  .imgCarrusel {
+    width: 500px;
+    height: 500px;
+  }
+  .imgInicio {
+    margin: 50px 0px 10px 0px;
+    border: solid black 3px;
+    width: 500px;
+    height: 500px;
+  }
+  .textoInicio {
+    font-size: 20px;
+    margin: 0px 15px 0px 15px;
+  }
+  footer {
+    margin-top: 60px;
+  }
+  /* Instalaciones */
+  .nombreSeccion {
+    margin: 30px 360px 30px 0px;
+    font-size: 30px;
+  }
+  .imgInstalaciones {
+    height: 450px;
+    width: 450px;
+    margin: 20px 0px 20px 0px;
+  }
+  /* Productos */
+  .imgProductos {
+    height: 450px;
+    width: 450px;
+  }
+  .precioProductos {
+    margin: 0px 180px 0px 180px;
+  }
+  /* Ubicación */
+  .imagenFachada {
+    width: 500px;
+    height: 500px;
+    margin: 20px 0px 20px 0px;
+  }
+  /* Contactos */
+  .formulario {
+    font-size: 18px;
+    width: 500px;
+    height: 500px;
+    padding: 10px;
+  }
+  .horario {
+    margin: 30px 120px 0px 120px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  /* Inicio */
+  .subtitulos {
+    top: 50%;
+    font-size: 30px;
+  }
+  .subtituloInicio {
+    position: absolute;
+    text-align: center;
+    top: 60%;
+    left: 20%;
+    right: 20%;
+    font-size: 30px;
+  }
+  .t-stroke {
+    font-size: 150px;
+  }
+  .caption {
+    position: absolute;
+    top: 30%;
+    left: 0%;
+    width: 100%;
+  }
+  .imgCarrusel {
+    width: 300px;
+    height: 900px;
+    border-bottom: solid white 5px;
+  }
+  .imgInicio {
+    margin: 40px 40px 40px 40px;
+    border: solid black 5px;
+    width: 400px;
+    height: 400px;
+  }
+  .textoInicio {
+    margin: 20px 50px 100px 50px;
+    text-align: left;
+  }
+  .tituloImagen {
+    margin: 130px 0px 0px 60px;
+    color: rgb(168, 9, 9);
+    text-shadow: black 0.1em 0.1em 0.1em;
+    text-align: left;
+    font-size: 60px;
+  }
+  .imagen1Flex {
+    display: flex;
+    flex-direction: row;
+    margin: 60px 60px 60px 60px;
+    background: black;
+    background: -webkit-linear-gradient(to right, #e74c3c, black);
+    background: linear-gradient(to right, #e74c3c, black);
+  }
+  .imagen2Flex {
+    display: flex;
+    flex-direction: row-reverse;
+    margin: 60px 60px 60px 60px;
+    background: black;
+    background: -webkit-linear-gradient(to right, black, #e74c3c);
+    background: linear-gradient(to right, black, #e74c3c);
+  }
+  /* Instalaciones */
+  .imgInstalaciones {
+    height: 300px;
+    width: 300px;
+    margin: 20px 20px 20px 20px;
+    border: 5px inset black;
+  }
+  .nombreSeccion {
+    margin: 30px 600px 30px 0px;
+    font-size: 35px;
+  }
+  .seccion {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 20px 0px 20px 0px;
+  }
+  /* Productos */
+  .imgProductos {
+    height: 300px;
+    width: 300px;
+  }
+  .precioProductos {
+    margin: 10px 70px 10px 70px;
+  }
+  /* Ubicación */
+  .fachadaFlex {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .imagenFachada {
+    width: 300px;
+    height: 300px;
+    margin: 40px 40px 40px 40px;
+  }
+  /* Contactos */
+  .formulario {
+    font-size: 20px;
+    width: 550px;
+    height: 550px;
+    padding: 15px;
+  }
+  .horario {
+    margin: 30px 300px 0px 300px;
+  }
+}
+footer {
+  grid-area: piedepagina;
+  background-color: black;
+  padding: 5px;
+  margin-top: 30px;
+  border-top: 2px solid white;
+  text-align: center;
+}
+
+.piePagina {
+  display: flex;
+  justify-content: center;
+}
+
+.logoRedes {
+  width: 80px;
+  height: 80px;
+}
+
+.botonSubir {
+  font-family: "Roboto:wght@300", sans-serif;
+  color: black;
+  background-color: rgb(189, 185, 185);
+  border-radius: 1cm;
+  text-decoration: none;
+}
+
+/*# sourceMappingURL=style.css.map */
