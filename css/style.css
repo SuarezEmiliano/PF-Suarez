@@ -94,7 +94,7 @@ nav {
   .t-shadow {
     text-shadow: 7px 7px rgb(168, 9, 9);
   }
-  .thumbnail {
+  .posicion {
     position: relative;
   }
   .subtitulos {
@@ -114,6 +114,7 @@ nav {
   .imgCarrusel {
     width: 30px;
     height: 300px;
+    border-bottom: solid white 1px;
   }
   .imgInicio {
     margin: 10px 0px 0px 0px;
@@ -373,7 +374,6 @@ nav {
   .imgCarrusel {
     width: 300px;
     height: 900px;
-    border-bottom: solid white 5px;
   }
   .imgInicio {
     margin: 40px 40px 40px 40px;
