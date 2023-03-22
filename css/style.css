@@ -474,12 +474,10 @@ footer {
   height: 80px;
 }
 
-.botonSubir {
-  font-family: "Roboto:wght@300", sans-serif;
-  color: black;
-  background-color: rgb(189, 185, 185);
-  border-radius: 1cm;
-  text-decoration: none;
+.copyright {
+  color: rgb(189, 185, 185);
+  margin-top: 10px;
+  font-size: 12px;
 }
 
 /*# sourceMappingURL=style.css.map */
