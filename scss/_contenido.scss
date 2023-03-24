@@ -106,7 +106,7 @@ nav{
 .tarjeta{
     width: 100%;
     margin: 20px;
-    background-color: black;
+    background-color: $color_transparente;
     border-radius: 15px;
     box-shadow: 0px 1px 10px $color_titulo;
     cursor:default;
@@ -174,7 +174,7 @@ nav{
         margin: 0px 80px 0px 80px;
         cursor:pointer;
         position:relative;
-        background-color: white;
+        background-color: $color_transparente2;
         padding:10px 20px;
         font-size:28px;
         border-top-right-radius:10px;
@@ -289,9 +289,21 @@ fieldset {
     margin-right: 10px;
 }
 
+.fondoBoton{
+    background-color: white;
+    border: 0;
+    border-radius: 5px;
+    margin: 5px;
+    padding: 5px;
+    font-size: 20px;
+    color: black;
+    transition: 0.7s;
+}
+
 .fondoBoton {
 	&:hover {
 		background-color: $color_titulo;
+        color: white;
 	}
 }
 
