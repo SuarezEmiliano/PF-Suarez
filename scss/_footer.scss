@@ -13,15 +13,27 @@ footer {
 }
 
 .logoRedes {
+	width: 70px;
+	height: 70px;
+	border-radius: 20cm;
+}
+
+.copyright{
+	color: $color_copy;
+	margin-top: 5px;
+	font-size: 12px;
+}
+
+.piePagina a{
+	position: relative;
+	display: block;
+	margin: 5px 0px 0px 0px;
 	width: 80px;
 	height: 80px;
 }
 
-
-
-.copyright{
-	color: $color_boton_subir;
-	margin-top: 10px;
-	font-size: 12px;
+.piePagina a :hover {
+	box-shadow: 0 0 25px $color_titulo2;
+	text-shadow: 0 0 25px $color_titulo2;
 }
 
